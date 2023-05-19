@@ -2,15 +2,15 @@ name: Root Static Build/Release
 
 on:
   push:
-    branches: [main,integration,feature/**,hotfix/**,qa/**]
+    branches: [main]
   pull_request:
-    branches: [main,integration,feature/**,hotfix/**,qa/**]
+    branches: [main]
 
 permissions: write-all
 
 env:
   CI: false
-  Branches: main,integration,feature/**,hotfix/**,qa/**
+  Branches: main
   MainBranch: integration
   NPMRegistry: https://registry.npmjs.org/
   InstallCommand: npm ci
